@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<body style="background-color:#520B00">
+    <div align="center">
+<img src="cymday.jpg" style="width:200px;height:200px;">
+   <div class="container">
+  <form action="Signed.html">
+    <label style="color:#FFFFFF; font-family:Cambria" for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+<p></p>
+    <label style="color:#FFFFFF; font-family:Cambria" for="psw">Password</label>
+  <input type="password" id="psw" name="psw" pattern="(?=.*)(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase letter, and at least 8 or more characters" required>
+
+   <p></p>
+		<input type="submit" value="Sign in">
+  </form>
+</div>
+
+<div id="message">
+  <h3 style="color:#FFFFFF; font-family:Cambria">Password must contain the following:</h3>
+  <p id="letter" class="invalid" style="color:#FFFFFF; font-family:Cambria">For student logins, the userid is your student number.  The password is generated based on the following (in order):
+ <p id="capital" class="invalid" style="color:#FFFFFF; font-family:Cambria">1. First letter of your FIRST NAME
+ <p id="capital" class="invalid" style="color:#FFFFFF; font-family:Cambria">2. First two letters of your LAST NAME
+ <p id="capital" class="invalid" style="color:#FFFFFF; font-family:Cambria">3. The two digit number for the day of your birth (If you are born Feb 4, 2000, then it would be 04)
+ <p id="capital" class="invalid" style="color:#FFFFFF; font-family:Cambria">4. Last 3 digits of your student number
+ <p id="capital" class="invalid" style="color:#FFFFFF; font-family:Cambria">So John Smith with student number 90294431, born on March 23, 2001 would have a password of: JSM23431</p>
+		</div>
+
+</body> 
+
+</html>
